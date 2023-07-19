@@ -7,7 +7,7 @@ import { CheckCircle } from '@mui/icons-material'
 const VideoCard = ({video:{id:{videoId},snippet}}) => {
   return (
     <Card s={{width:{md:'320px',xs:'100%',sm:'358px'},
-    boxShadow:'none',borderRadius:0}}>
+    boxShadow:'none',borderRadius:'12px'}}>
         <Link to={videoId ? `/video/${videoId}`:demoVideoUrl}>
         <CardMedia 
         image={snippet?.thumbnails?.high?.url}
